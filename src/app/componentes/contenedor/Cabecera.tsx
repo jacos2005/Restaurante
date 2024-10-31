@@ -6,7 +6,7 @@ export const Cabecera = () => {
     <>
       <nav
         className="navbar navbar-expand-lg"
-        style={{ backgroundColor: "#16415a" }}
+        style={{ backgroundColor: "#7e768c" }}
         data-bs-theme="light"
       >
         <div className="container-fluid">
