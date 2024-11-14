@@ -1,4 +1,21 @@
+import { useState } from "react";
+import { Plato } from "../../modelos/Plato";
+import { ARREGLO_PLATO } from "../../mocks/Plato-mocks";
+import { ARREGLO_PLATOS_REGION } from "../../utilidades/dominios/DomRegion";
+
+
+
 export const MenuListar = () => {
+  const [arrPlatos] = useState<Plato []>(ARREGLO_PLATO);
+
+
+
+  const obtenerNombre = (valor:string)=>{
+    for (const obRegion of ARREGLO_PLATOS_REGION){
+      if(obRegion.codRegion== valor)
+        return obRegion.nombreRegion
+    }
+  }
   return (
     <>
     <div className="pt-5 d-flex justify-content-center">
@@ -8,33 +25,33 @@ export const MenuListar = () => {
           <tr>
             <th  style= {{width: "5%"}} >No</th>
             <th style= {{width: "30%"}}>Nombre plato</th>
-            <th style= {{width: "25%"}} >Acompañamiento</th>
-            <th style= {{width: "20%"}} className="text-center">Precio</th>
-            <th style= {{width: "20%"}}>Region</th>
+            <th style= {{width: "20%"}} >Acompañamiento</th>
+            <th style= {{width: "15%"}} className="text-center">Precio</th>
+            <th style= {{width: "15%"}}>Region</th>
+            <th style= {{width: "15%"}}>imagen</th>
           </tr>
         </thead>
         <tbody>
+
+          {arrPlatos.map((miPla: Plato)=>(
+             <tr key={miPla.codPlato} className="align-middle">
+             <td>{miPla.codPlato}</td>
+             <td>{miPla.nombrePlato}</td>
+             <td>{miPla.precioPlato}</td>
+             <td >{obtenerNombre(miPla.regionPlato)}</td>
+             <td>
+              <img src={miPla.imagenPlatobase64} alt={miPla.nombrePlato} className="imagenListado" />
+              <br/>
+              {miPla.imagenPlato}
+
+
+             </td>
+             
+           </tr>
+          ))}
           <tr>
-            <td>1</td>
-            <td>Banadeja paisa</td>
-            <td>Con aguacate</td>
-            <td className="text-center">35.000</td>
-            <td>Paisa</td>
           </tr>
-          <tr>
-          <td>2</td>
-            <td>Asados</td>
-            <td>Con papitas a la francesa</td>
-            <td className="text-center">25.000</td>
-            <td>Paisa</td>
-          </tr>
-          <tr>
-          <td>3</td>
-            <td>Ajiaco</td>
-            <td>Con arroz</td>
-            <td className="text-center">15.000</td>
-            <td>Andina</td>
-          </tr>
+          
         </tbody>
       </table>
       </div>
