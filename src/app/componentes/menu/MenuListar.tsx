@@ -25,10 +25,11 @@ export const MenuListar = () => {
           <tr>
             <th  style= {{width: "5%"}} >No</th>
             <th style= {{width: "30%"}}>Nombre plato</th>
-            <th style= {{width: "20%"}} >Acompañamiento</th>
-            <th style= {{width: "15%"}} className="text-center">Precio</th>
+            <th style= {{width: "10%"}} className="text-center">Precio</th>
             <th style= {{width: "15%"}}>Region</th>
             <th style= {{width: "15%"}}>imagen</th>
+            
+            
           </tr>
         </thead>
         <tbody>
@@ -51,6 +52,7 @@ export const MenuListar = () => {
           ))}
           <tr>
           </tr>
+          
           
         </tbody>
       </table>
