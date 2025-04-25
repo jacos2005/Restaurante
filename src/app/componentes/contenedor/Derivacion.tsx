@@ -2,7 +2,7 @@ export const NoEncontrado = () => {
     return (
       <>
         Soy el No encontrado <br />
-        Como el de los errores
+        Como el de los errores....gdh
       </>
     );
   };
