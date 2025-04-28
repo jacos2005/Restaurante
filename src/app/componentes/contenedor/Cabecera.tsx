@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { rutasAplicacion } from "../../../constants/rutas";
 
 export const Cabecera = () => {
   return (
@@ -29,27 +30,27 @@ export const Cabecera = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-white" to="/tema/derivacion">
+              <NavLink className="nav-link text-white" to={rutasAplicacion.derivacion}>
                 Derivación
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-white" to="/tema/integracion">
+              <NavLink className="nav-link text-white" to={rutasAplicacion.integracion}>
                 Integración
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-white" to="/tema/interpolacion">
+              <NavLink className="nav-link text-white" to={rutasAplicacion.interpolacion}>
                 Interpolación
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-white" to="/tema/ec-diferenciales">
+              <NavLink className="nav-link text-white" to={rutasAplicacion.ecuacionesDiferenciales}>
                 Ecuaciones Diferenciales
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-white" to="/tema/metodos-numericos">
+              <NavLink className="nav-link text-white" to={rutasAplicacion.metodosNumericos}>
                 Métodos Numéricos
               </NavLink>
             </li>

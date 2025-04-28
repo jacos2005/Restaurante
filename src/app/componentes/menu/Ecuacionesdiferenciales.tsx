@@ -1,4 +1,4 @@
-export const MenuCrear = () => {
+export const Ecuacionesdiferenciales = () => {
   return (
     <>
    

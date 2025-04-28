@@ -1,4 +1,4 @@
-export const MenuAdmin = () => {
+export const Integracion = () => {
     return (
       <>
         <div className="pt-5 d-flex justify-content-center">

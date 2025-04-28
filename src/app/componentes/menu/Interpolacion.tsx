@@ -1,8 +1,5 @@
-export const MenuActualizar = () => {
+export const Interpolacion = () => {
   return (
-    <>
-      Soy el menú actualizar <br />
-      menu...fsdfds
-    </>
+    <h1>Interpolacion Component</h1>
   )
 }

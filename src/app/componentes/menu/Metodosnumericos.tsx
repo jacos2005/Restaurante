@@ -5,7 +5,7 @@ import { ARREGLO_PLATOS_REGION } from "../../utilidades/dominios/DomRegion";
 
 
 
-export const MenuListar = () => {
+export const Metodosnumericos = () => {
   const [arrPlatos] = useState<Plato []>(ARREGLO_PLATO);
 
 
