@@ -1,8 +1,5 @@
-export const NoEncontrado = () => {
+export const Derivacion = () => {
     return (
-      <>
-        Soy el No encontrado <br />
-        Como el de los errores....gdh
-      </>
+     <h1>derivacion</h1>
     );
   };
