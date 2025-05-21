@@ -45,11 +45,6 @@ export const Cabecera = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-white" to={rutasAplicacion.ecuacionesDiferenciales}>
-                Ecuaciones Diferenciales
-              </NavLink>
-            </li>
-            <li className="nav-item">
               <NavLink className="nav-link text-white" to={rutasAplicacion.metodosNumericos}>
                 Métodos Numéricos
               </NavLink>

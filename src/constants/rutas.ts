@@ -1,7 +1,7 @@
 export const rutasAplicacion = {
   inicio: "/",
   metodosNumericos: "/metodos-numericos",
-  ecuacionesDiferenciales: "/ecuaciones-diferenciales",
+  ecuacionesdiferenciales: "/Ecuacionesdiferenciales",
   integracion: "/integracion",
   interpolacion: "/interpolacion",
   derivacion: "/derivacion",
